@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collections | Estylo's Provision Store</title>
+    <meta name="description" content="Browse beverages, measuring items, and washing items from Estylo's Provision Store.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="container nav-wrap">
+            <a href="index.html" class="brand">Estylo's Provision Store</a>
+            <nav class="main-nav" aria-label="Main navigation">
+                <a href="index.html">Home</a>
+                <a href="collections.html" class="active">Collections</a>
+                <a href="testimonies.html">Testimonials</a>
+                <a href="pictures.html">Pictures</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <div class="container center-copy">
+                <p class="eyebrow">Our products</p>
+                <h1>Pick a category and choose your item</h1>
+                <p class="lead">Start with the category you need, then select the exact product you want to order.</p>
+            </div>
+        </section>
+
+        <section class="collection-section">
+            <div class="container">                <div class="filter-bar">
+                    <label class="search-box" aria-label="Search products">
+                        <span>Search</span>
+                        <input id="productSearch" type="search" placeholder="Search products...">
+                    </label>
+                    <div class="mini-metrics">
+                        <span>Fast delivery</span>
+                        <span>Secure payment</span>
+                        <span>Trusted quality</span>
+                    </div>
+                </div>
+                <div class="category-selector" role="tablist" aria-label="Product categories">
+                    <button class="category-button is-active" type="button" data-category="beverages" aria-pressed="true">Beverages</button>
+                    <button class="category-button" type="button" data-category="measuring" aria-pressed="false">Measuring</button>
+                    <button class="category-button" type="button" data-category="washing" aria-pressed="false">Washing Items</button>
+                    <button class="category-button" type="button" data-category="education" aria-pressed="false">Education</button>
+                </div>
+
+                <div id="productGrid" class="products-grid" aria-live="polite"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-wrap">
+            <p>© <span data-current-year></span> Estylo's Provision Store</p>
+            <a href="https://wa.me/2348064536814" target="_blank" rel="noreferrer">WhatsApp: +2348064536814</a>
+        </div>
+    </footer>
+
+    <a class="floating-whatsapp" href="https://wa.me/2348064536814" target="_blank" rel="noreferrer" aria-label="Chat on WhatsApp">
+        WhatsApp
+    </a>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
